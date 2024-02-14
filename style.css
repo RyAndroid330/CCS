@@ -1,0 +1,283 @@
+/* body */
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: rgb(238, 233, 233);
+  padding: 20px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#background {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(91, 91, 93) 200px,
+      rgba(68, 68, 68, 0.134)
+    ),
+    url("Surfboard_at_sunset.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: fixed;
+  z-index: -10;
+  background-repeat: no-repeat;
+}
+
+/* ----------------------------------------------- */
+/* nav bar */
+
+nav ul {
+  background-color: rgb(255, 166, 46);
+  text-shadow: 1px 1px black;
+  height: 2em;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+nav ul a {
+  text-decoration: none;
+  color: rgb(238, 233, 233);
+  font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+  flex-grow: 1;
+  text-align: center;
+}
+nav ul li:hover {
+  width: 120px;
+  height: 2em;
+  background-color: rgba(104, 104, 104, 0.662);
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  background-color: rgb(255, 166, 46);
+}
+
+/* ----------------------------------------------- */
+/* Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  width: auto;
+}
+header img {
+  width: 500px;
+}
+
+/* ----------------------------------------------- */
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 166, 46);
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* ----------------------------------------------- */
+/* universal */
+
+h1,
+h2,
+h3 {
+  font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+}
+p,
+label {
+  font-family: "Patrick Hand SC", Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+}
+.button {
+  cursor: pointer;
+  background-color: rgb(255, 166, 46);
+  color: rgb(238, 233, 233);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 2px;
+  border: #515050d0;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  width: 200px;
+  font-weight: 600;
+  font-family: "Patrick Hand SC", Arial, Helvetica, sans-serif;
+}
+.button:hover {
+  background-color: rgb(238, 233, 233);
+  color: #515050d0;
+}
+
+/* ----------------------------------------------- */
+/* Home */
+
+main {
+  padding: 30px;
+  color: rgb(238, 233, 233);
+}
+.welcome {
+  padding: 20px;
+  background-color: rgba(104, 104, 104, 0.662);
+  border-radius: 20px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.welcome h2 {
+  color: rgb(255, 166, 46);
+  text-shadow: 1px 1px black;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: medium;
+}
+.welcome h1 {
+  color: rgb(255, 166, 46);
+  text-shadow: 1px 1px black;
+}
+
+/* ----------------------------------------------- */
+/* shop */
+.shop {
+  padding: 50px 20px;
+  margin-left: 8%;
+  margin-bottom: 5px;
+  display: flex; /* not on small screens */
+  max-width: 80%;
+  min-width: 200px;
+  background-color: rgba(104, 104, 104, 0.662);
+  border-radius: 20px;
+  border-style: solid;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.shop img {
+  width: 200px;
+  height: 200px;
+}
+.shop h2 {
+  margin: 10px;
+  width: 250px;
+  max-height: 100px;
+  color: rgb(255, 166, 46);
+  text-shadow: 1px 1px black;
+  position: absolute;
+  top: 10px;
+}
+.shop section div {
+  margin-bottom: 10px;
+  max-width: 150px;
+}
+.item {
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.item div h3 {
+  color: rgb(255, 166, 46);
+  text-shadow: 1px 1px black;
+  width: 200px;
+}
+.item div p {
+  max-width: 200px;
+  height: 100px;
+}
+.item div {
+  height: 255px;
+}
+
+/* ----------------------------------------------- */
+/* Contact Us */
+
+.text-box {
+  padding: 20px;
+  background-color: rgba(104, 104, 104, 0.662);
+  border-radius: 20px;
+  min-width: 300px;
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.text-box h2 {
+  margin-top: 0;
+  color: rgb(255, 166, 46);
+  text-shadow: 1px 1px black;
+}
+.text-box div img {
+  max-height: 200px;
+  min-height: 150px;
+}
+.form {
+  padding: 20px;
+  background-color: rgba(104, 104, 104, 0.662);
+  border-radius: 20px;
+  display: flex;
+  margin-top: 0;
+  min-width: 300px;
+  align-items: start;
+}
+#contact-main {
+  display: flex;
+}
+
+/* ----------------------------------------------- */
+/* our process */
+
+#process {
+  position: relative;
+}
+#process section {
+  padding: 20px;
+  background-color: rgba(104, 104, 104, 0.662);
+  border-radius: 20px;
+  max-width: 100%;
+  min-width: 200px;
+  display: flex;
+  margin-top: 20px;
+}
+#process section div {
+  margin: 20px;
+  flex-grow: 1;
+}
+#process section img {
+  max-width: 200px;
+  max-height: 200px;
+}
+#process section h2 {
+  color: rgb(255, 166, 46);
+  text-shadow: 1px 1px black;
+}
+#process h1 {
+  color: rgb(255, 166, 46);
+  text-shadow: 1px 1px black;
+  font-size: 3em;
+}
+
+/* ----------------------------------------------- */
+/* Media */
+
+@media (max-width: 700px) {
+  header img {
+    width: 200px;
+  }
+  #contact-main {
+    display: flex;
+    flex-direction: column;
+  }
+  #process section {
+    flex-direction: column;
+  }
+  #process section img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
